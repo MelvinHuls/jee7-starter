@@ -24,7 +24,6 @@ public class FortuneServiceIntegrationTest {
 	public void destroy() {
 		container.close();
 	}
-	
 	@Test
 	public void fortuneYieldsProfaneMessage() {
 		FortuneService forserv = container.instance().select(FortuneService.class).get();
